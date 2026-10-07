@@ -18,3 +18,7 @@ bun run preview
 ```
 
 The site is static and ships no client-side JavaScript. CI checks the build output and rejects JavaScript assets.
+
+## Standard developer commands
+
+Use `mise install` for the pinned toolchain. `mise exec -- make check` installs frozen dependencies, builds the static site and runs every existing output assertion. `make test` checks an existing build. No source lint or type-check gate is configured, so that profile capability is explicitly unsupported. `make dev` runs in the foreground; stop with Ctrl-C. `make clean` removes generated output.
