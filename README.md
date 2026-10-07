@@ -1,46 +1,20 @@
-# Astro Starter Kit: Basics
+# Stavlos website
+
+Static Astro landing page for the local-first coding-agent harness.
+
+Primary destination: [Stavlos](https://github.com/nicodes/stavlos#readme).
+
+Describes persistent agent teams and the terminal, loopback web, and Discord clients. Web questions and permissions are answered through the terminal or Discord.
+
+## Development
+
+Use the Bun version in `.mise.toml`.
 
 ```sh
-bun create astro@latest -- --template basics
+bun install --frozen-lockfile
+bun run dev
+bun run build
+bun run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+The site is static and ships no client-side JavaScript. CI checks the build output and rejects JavaScript assets.
