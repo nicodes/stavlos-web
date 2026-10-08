@@ -12,11 +12,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@builder.io/qwik": "^1.19.2",
+    "@builder.io/qwik": "^1.20.1",
     "@qwikdev/astro": "^0.8.3",
-    "@tailwindcss/vite": "^4.2.2",
+    "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.3.7",
-    "tailwindcss": "^4.2.2"
+    "tailwindcss": "^4.3.3"
   },
   "overrides": {
     "shell-quote": "1.11.0"
