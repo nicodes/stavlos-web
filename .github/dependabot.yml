@@ -1,14 +1,136 @@
 version: 2
 updates:
-  - package-ecosystem: bun
-    directory: /
-    schedule:
-      interval: weekly
-      day: monday
-      time: '15:10'
-      timezone: Etc/UTC
-    open-pull-requests-limit: 5
-    groups:
-      bun-minor-patch:
-        patterns: ['*']
-        update-types: [minor, patch]
+- package-ecosystem: github-actions
+  directory: /
+  schedule:
+    interval: weekly
+    day: monday
+    time: 09:00
+    timezone: Etc/UTC
+  open-pull-requests-limit: 5
+  cooldown:
+    default-days: 3
+  groups:
+    routine-updates:
+      patterns:
+      - '*'
+      exclude-patterns:
+      - nicodes/tools/*
+      - nicodes/cicd/*
+      - nicodes/komizo-actions/*
+      - aviorstudio/gdam-actions/*
+      - '*clerk*'
+      - '*pocketbase*'
+      - '*crypto*'
+      - '*jsonwebtoken*'
+      - '*jose*'
+      - '*oauth*'
+      - '*openid*'
+      - '*passport*'
+      - '*bcrypt*'
+      - '*argon2*'
+      - '@noble/*'
+      - '*prisma*'
+      - '*drizzle*'
+      - '*migrate*'
+      - '@qwikdev/astro'
+      update-types:
+      - minor
+      - patch
+    managed-releases:
+      patterns: &id001
+      - nicodes/tools/*
+      - nicodes/cicd/*
+      - nicodes/komizo-actions/*
+      - aviorstudio/gdam-actions/*
+      update-types:
+      - minor
+      - patch
+    security-fixes:
+      applies-to: security-updates
+      patterns:
+      - '*'
+      exclude-patterns:
+      - nicodes/tools/*
+      - nicodes/cicd/*
+      - nicodes/komizo-actions/*
+      - aviorstudio/gdam-actions/*
+      - '*clerk*'
+      - '*pocketbase*'
+      - '*crypto*'
+      - '*jsonwebtoken*'
+      - '*jose*'
+      - '*oauth*'
+      - '*openid*'
+      - '*passport*'
+      - '*bcrypt*'
+      - '*argon2*'
+      - '@noble/*'
+      - '*prisma*'
+      - '*drizzle*'
+      - '*migrate*'
+- package-ecosystem: bun
+  directory: /
+  schedule:
+    interval: weekly
+    day: monday
+    time: 09:00
+    timezone: Etc/UTC
+  open-pull-requests-limit: 5
+  groups:
+    routine-updates:
+      patterns:
+      - '*'
+      exclude-patterns:
+      - nicodes/tools/*
+      - nicodes/cicd/*
+      - nicodes/komizo-actions/*
+      - aviorstudio/gdam-actions/*
+      - '*clerk*'
+      - '*pocketbase*'
+      - '*crypto*'
+      - '*jsonwebtoken*'
+      - '*jose*'
+      - '*oauth*'
+      - '*openid*'
+      - '*passport*'
+      - '*bcrypt*'
+      - '*argon2*'
+      - '@noble/*'
+      - '*prisma*'
+      - '*drizzle*'
+      - '*migrate*'
+      - '@qwikdev/astro'
+      update-types:
+      - minor
+      - patch
+    managed-releases:
+      patterns: *id001
+      update-types:
+      - minor
+      - patch
+    security-fixes:
+      applies-to: security-updates
+      patterns:
+      - '*'
+      exclude-patterns:
+      - nicodes/tools/*
+      - nicodes/cicd/*
+      - nicodes/komizo-actions/*
+      - aviorstudio/gdam-actions/*
+      - '*clerk*'
+      - '*pocketbase*'
+      - '*crypto*'
+      - '*jsonwebtoken*'
+      - '*jose*'
+      - '*oauth*'
+      - '*openid*'
+      - '*passport*'
+      - '*bcrypt*'
+      - '*argon2*'
+      - '@noble/*'
+      - '*prisma*'
+      - '*drizzle*'
+      - '*migrate*'
+  cooldown:
+    default-days: 3
