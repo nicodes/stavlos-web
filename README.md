@@ -1,10 +1,10 @@
-<!-- Generated from private documentation source. Do not edit directly. Source SHA256: ceaba1449ca62f9d17e25adf43cbbfd03c6c96cde3ec655d7cb9723bd2be1d03 -->
+<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 9f8a39ac75d92cb9cc5bf1973b66dc1e3cb1e6f11693f5dca98f2423838e90d2 -->
 
 # stavlos-web
 
 Static website built with Astro.
 
-Install the [Komizo release](https://github.com/nicodes/komizo#install) matching `komizo.lock`, then run:
+Install the [komizo release](https://github.com/nicodes/komizo#install) matching `komizo.lock`, then run:
 
 ```sh
 komizo dev                 # Foreground development server
