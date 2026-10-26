@@ -12,7 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.4.0"
+    "astro": "^7.4.2"
   },
   "overrides": {
     "shell-quote": "1.11.0"
