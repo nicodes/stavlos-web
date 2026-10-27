@@ -1,4 +1,4 @@
-<!-- Generated from private documentation source. Do not edit directly. Source SHA256: d2bd7f8fe7a9c6d63ba9a2ceae6f81650076f281386cca32250857bd736033aa -->
+<!-- Generated from private documentation source. Do not edit directly. Source SHA256: cb55deb3d837e78cbe725275f351145b0b7d638609563f0f558e301fc8a51eb9 -->
 
 # stavlos-web
 
@@ -21,4 +21,4 @@ Ctrl-C stops development. This website needs no runtime credentials or credentia
 curl -fsSL https://raw.githubusercontent.com/nicodes/stavlos/main/install.sh | sh
 ```
 
-Requires Go. See [stavlos](https://github.com/nicodes/stavlos#readme) for setup and installation options.
+Prebuilt Linux binaries are available for x86_64 and arm64. A Go compiler is not required. See [stavlos](https://github.com/nicodes/stavlos#readme) for setup and installation options.
