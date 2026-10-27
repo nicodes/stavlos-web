@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const installCommand = "curl -fsSL https://raw.githubusercontent.com/nicodes/stavlos/main/install.sh | sh";
 ---
 
 <Layout>
@@ -153,9 +154,8 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 				<div class="install-note">
 					<span>INSTALL FROM SOURCE</span>
-					<pre>git clone https://github.com/nicodes/stavlos.git
-cd stavlos
-go install ./cmd/stavlos</pre>
+					<pre><code>{installCommand}</code></pre>
+					<p>Requires Go.</p>
 					<a href="https://github.com/nicodes/stavlos#readme">Read the setup guide ↗</a>
 				</div>
 			</section>
@@ -595,6 +595,8 @@ go install ./cmd/stavlos</pre>
 		color: #786d54;
 	}
 	.install-note pre {
+		white-space: pre-wrap;
+		overflow-wrap: anywhere;
 		font-size: 12px;
 		line-height: 2;
 		margin: 25px 0;
