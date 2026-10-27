@@ -1,4 +1,4 @@
-<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 9f8a39ac75d92cb9cc5bf1973b66dc1e3cb1e6f11693f5dca98f2423838e90d2 -->
+<!-- Generated from private documentation source. Do not edit directly. Source SHA256: d2bd7f8fe7a9c6d63ba9a2ceae6f81650076f281386cca32250857bd736033aa -->
 
 # stavlos-web
 
@@ -14,3 +14,11 @@ komizo describe            # Inspect tools and available commands
 ```
 
 Ctrl-C stops development. This website needs no runtime credentials or credential `.env` file.
+
+## Install the CLI
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/nicodes/stavlos/main/install.sh | sh
+```
+
+Requires Go. See [stavlos](https://github.com/nicodes/stavlos#readme) for setup and installation options.
