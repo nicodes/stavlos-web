@@ -1,4 +1,4 @@
-<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 7fce828017a6b3bb325d4d6d172b40ff707fa12478efecece8f686ef95b152d0 -->
+<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 63176e0ba16dd8a6443424ad88b07ac648244b9fc44f7051e34b03f3a00af3b6 -->
 
 # stavlos-web
 
@@ -17,8 +17,18 @@ Ctrl-C stops development. This website needs no runtime credentials or credentia
 
 ## Install the CLI
 
+With curl:
+
 ```sh
 curl -fsSL https://stavlos.ai/install | sh
 ```
+
+Or with mise:
+
+```sh
+mise use --global github:nicodes/stavlos@latest
+```
+
+Each install command has a Copy button with confirmation. If clipboard access is unavailable, the command remains selectable for manual copying.
 
 Prebuilt Linux binaries are available for x86_64 and arm64. A Go compiler is not required. See [stavlos](https://github.com/nicodes/stavlos#readme) for setup and installation options.
