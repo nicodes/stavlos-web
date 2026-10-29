@@ -1,6 +1,8 @@
 ---
+import InstallCommand from '../components/InstallCommand.astro';
 import Layout from '../layouts/Layout.astro';
 const installCommand = "curl -fsSL https://stavlos.ai/install | sh";
+const miseCommand = "mise use --global github:nicodes/stavlos@latest";
 ---
 
 <Layout>
@@ -154,7 +156,10 @@ const installCommand = "curl -fsSL https://stavlos.ai/install | sh";
 				</div>
 				<div class="install-note">
 					<span>INSTALL THE CLI</span>
-					<pre><code>{installCommand}</code></pre>
+					<p>curl</p>
+					<InstallCommand command={installCommand} method="curl" />
+					<p>mise</p>
+					<InstallCommand command={miseCommand} method="mise" />
 					<p>Prebuilt binaries for Linux.</p>
 					<a href="https://github.com/nicodes/stavlos#readme">Read the setup guide ↗</a>
 				</div>
@@ -167,6 +172,7 @@ const installCommand = "curl -fsSL https://stavlos.ai/install | sh";
 			</nav>
 		</footer>
 	</div>
+	<script is:inline type="module" src="/install-copy.js"></script>
 </Layout>
 <style>
 	* {
