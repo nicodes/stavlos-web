@@ -1,16 +1,16 @@
-<!-- Generated from private documentation source. Do not edit directly. Source SHA256: ea61f95725be7e86115c08e6303f8b0d583194e811ea150322ccd31eb4320b8b -->
+<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 99d98a2a2782be1af691b7ed9ee743fb94b73d2ffdb6e9ebcc68486dc9a24d5b -->
 
 # stavlos-web
 
 Static website built with Astro.
 
-Install the [komizo release](https://github.com/nicodes/komizo#install) matching `komizo.lock`, then run:
+Install [mise](https://mise.jdx.dev/) and run `mise install`, then run:
 
 ```sh
-komizo dev                 # Foreground development server
-komizo check               # Complete applicable source, build and output checks
-komizo run build           # Generate dist/
-komizo describe            # Inspect tools and available commands
+mise run dev                 # Development server
+mise run check               # Complete applicable source, build and output checks
+mise run build           # Generate dist/
+mise tasks ls            # Inspect tools and available commands
 ```
 
 Ctrl-C stops development. This website needs no runtime credentials or credential `.env` file.
