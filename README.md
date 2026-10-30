@@ -1,4 +1,4 @@
-<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 99d98a2a2782be1af691b7ed9ee743fb94b73d2ffdb6e9ebcc68486dc9a24d5b -->
+<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 0675dc4ff39e8601c98abc83181139a547a9e67ac763bfefde6d1e376e82291e -->
 
 # stavlos-web
 
@@ -32,3 +32,14 @@ mise use --global github:nicodes/stavlos@latest
 An icon-only copy control sits on the right inside each install-command outline and shows a checkmark after copying. If clipboard access is unavailable, the command remains selectable for manual copying.
 
 Prebuilt Linux binaries are available for x86_64 and arm64. A Go compiler is not required. See [stavlos](https://github.com/nicodes/stavlos#readme) for setup and installation options.
+
+For contributor verification, prepare the pinned helper source before running native tasks:
+
+```sh
+git clone https://github.com/nicodes/tools.git .ci-tools
+git -C .ci-tools checkout --detach f7e243524ce2aa29f299e4c79db33001f72f4a30
+mise install
+mise run check
+```
+
+Build commands record source and exact regular output hashes. Declared tests produce evidence from the current verification session in `.artifacts/verification`.
