@@ -1,4 +1,4 @@
-<!-- Generated from private documentation source. Do not edit directly. Source SHA256: fc11c5e77b12c197473e6db4a7bd999a081f3d365e2c3bb75ff1d13a47a576ea -->
+<!-- Generated from private documentation source. Do not edit directly. Source SHA256: f680554fddd3d04aca85bcb2585f4376e45837d625cf9c317b968523034988fb -->
 
 # stavlos-web
 
@@ -37,7 +37,7 @@ For contributor verification, prepare the pinned helper source before running na
 
 ```sh
 git clone https://github.com/nicodes/tools.git .ci-tools
-git -C .ci-tools checkout --detach 39666e8d26d2bd0e1c7e5fee6f289fd0fd3a5202
+git -C .ci-tools checkout --detach 46bf98735de2e7fe41cca1042c20c98f5b01824a
 mise install
 mise run check
 ```
